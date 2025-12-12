@@ -1,8 +1,15 @@
-//template_ob2sc0n
+let isModalOpen = false;
+let contrastToggle = false;
 
-//service_a8n1b9y
-
-//kSBXwG5ZmNru9jeFp
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme";
+    }
+    else {
+        document.body.classList.remove("dark-theme");
+    }
+}
 
  function contact(event) {
    event.preventDefault();
@@ -28,7 +35,7 @@
     })
 }
 
-let isModalOpen = false;
+
 function toggleModal() {
     if (isModalOpen) {
         isModalOpen = false;
